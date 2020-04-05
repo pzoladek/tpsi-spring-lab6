@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kalkulator</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+<form action="/calculator/zad3/calculate" method="post">
+    x: <input type="number" name="x" />
+    y: <input type="number" name="y" />
+
+    <label for="operations">Wybierz operację: </label>
+    <select id="operations" name="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <input type="submit" value="Oblicz" />
+</form>
+
+</body>
+</html>

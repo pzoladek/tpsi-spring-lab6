@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pierwszy projekt springowy</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+<h1>Przedstaw się ładnie:</h1>
+<form action="/hello" method="post">
+    Imię: <input type="text" name="imie" />
+    <input type="submit" value="Wyślij" />
+</form>
+
+<p>
+    <span th:text="${imie}">Anonim</span> twierdzi, że ma <span th:text="${wiek}">20</span> lat
+</p>
+
+</body>
+</html>
